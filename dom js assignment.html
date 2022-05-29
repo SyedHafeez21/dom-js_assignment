@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Assignment</title>
+</head>
+
+<body>
+    <div>
+        <h1> DOM </h1>
+        <div id=”form-content” class=”content”>
+            <label for=”first-name”>First Name</label>
+            <input type=”text” id=”firstname” />
+            <label for=”last-name”>Last Name</label>
+            <input type=”text” id=”last-name” />
+            <label for=”email”>Email</label>
+            <input type=”text” id=”email” />
+        </div>
+        <div id="main-content" class=”content”>
+            <p class=”render”> First Name : Alex</p>
+            <p class=”render” id=”lastName”>Last Name: Bank</p>
+            <p class=”render”> Email : alexbank@example.com</p>
+            <p class=”render”> Country : Pakistan </p>
+            <p class=”render”> contact : +92 300 1234567</p>
+        </div>
+    </div>
+
+    <script>
+        // QUESTION 1
+
+        // POINT 1
+        let main = document.getElementById("main-content")
+        //  POINT 2
+        console.log(main)
+
+
+        //  POINT 2
+        let para1 = document.getElementsByTagName("p")[0]
+        let para2 = document.getElementsByTagName("p")[1]
+        let para3 = document.getElementsByTagName("p")[2]
+        let para4 = document.getElementsByTagName("p")[3]
+        let para5 = document.getElementsByTagName("p")[4]
+        document.write(para1.innerHTML)
+        document.write(para2.innerHTML)
+        document.write(para3.innerHTML)
+        document.write(para4.innerHTML)
+        document.write(para5.innerHTML)
+
+
+        //POINT 4 
+        let firstname = document.getElementsByTagName("input")[0].innerText = "hafeez"
+        let lastname = document.getElementsByTagName("input")[1].innerText = "shah"
+        let email = document.getElementsByTagName("input")[2].innerText = "hafeez@gmail.com"
+        console.log(firstname)
+        console.log(lastname)
+        console.log(email)
+
+
+
+        // ------------------------
+
+    </script>
+</body>
+
+</html>
